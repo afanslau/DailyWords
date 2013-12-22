@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+static NSString* timeChangeNotification = @"timeChangeNotification";
+
 @interface AFAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

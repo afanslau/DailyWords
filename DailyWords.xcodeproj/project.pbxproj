@@ -22,6 +22,15 @@
 		B18A9B5618662ECF006BF9BB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18A9B3A18662ECE006BF9BB /* CoreData.framework */; };
 		B18A9B5E18662ECF006BF9BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B18A9B5C18662ECF006BF9BB /* InfoPlist.strings */; };
 		B18A9B6018662ECF006BF9BB /* DailyWordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A9B5F18662ECF006BF9BB /* DailyWordsTests.m */; };
+		B18A9B6A18662EF2006BF9BB /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18A9B6918662EF2006BF9BB /* MainStoryboard_iPhone.storyboard */; };
+		B18A9B6C18662F03006BF9BB /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18A9B6B18662F03006BF9BB /* MainStoryboard_iPad.storyboard */; };
+		B18A9B7218663136006BF9BB /* AFDayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A9B7118663136006BF9BB /* AFDayTableViewController.m */; };
+		B18A9B7518663265006BF9BB /* AFDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A9B7418663265006BF9BB /* AFDayCell.m */; };
+		B18A9B781866333E006BF9BB /* NSDate+Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A9B771866333E006BF9BB /* NSDate+Misc.m */; };
+		B18A9B7B18663747006BF9BB /* AFWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A9B7A18663747006BF9BB /* AFWordsViewController.m */; };
+		B18A9B7D18663D5F006BF9BB /* DayTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18A9B7C18663D5F006BF9BB /* DayTableHeaderView.xib */; };
+		B18A9B80186641EF006BF9BB /* AFDayEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A9B7F186641EF006BF9BB /* AFDayEntry.m */; };
+		B18A9B8318665484006BF9BB /* UIColor+UIColor_RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A9B8218665484006BF9BB /* UIColor+UIColor_RGB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,21 @@
 		B18A9B5B18662ECF006BF9BB /* DailyWordsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DailyWordsTests-Info.plist"; sourceTree = "<group>"; };
 		B18A9B5D18662ECF006BF9BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B18A9B5F18662ECF006BF9BB /* DailyWordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DailyWordsTests.m; sourceTree = "<group>"; };
+		B18A9B6918662EF2006BF9BB /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B18A9B6B18662F03006BF9BB /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B18A9B7018663136006BF9BB /* AFDayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFDayTableViewController.h; path = ../AFDayTableViewController.h; sourceTree = "<group>"; };
+		B18A9B7118663136006BF9BB /* AFDayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFDayTableViewController.m; path = ../AFDayTableViewController.m; sourceTree = "<group>"; };
+		B18A9B7318663265006BF9BB /* AFDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFDayCell.h; sourceTree = "<group>"; };
+		B18A9B7418663265006BF9BB /* AFDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFDayCell.m; sourceTree = "<group>"; };
+		B18A9B761866333E006BF9BB /* NSDate+Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Misc.h"; sourceTree = "<group>"; };
+		B18A9B771866333E006BF9BB /* NSDate+Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Misc.m"; sourceTree = "<group>"; };
+		B18A9B7918663747006BF9BB /* AFWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFWordsViewController.h; sourceTree = "<group>"; };
+		B18A9B7A18663747006BF9BB /* AFWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFWordsViewController.m; sourceTree = "<group>"; };
+		B18A9B7C18663D5F006BF9BB /* DayTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayTableHeaderView.xib; sourceTree = "<group>"; };
+		B18A9B7E186641EF006BF9BB /* AFDayEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFDayEntry.h; sourceTree = "<group>"; };
+		B18A9B7F186641EF006BF9BB /* AFDayEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFDayEntry.m; sourceTree = "<group>"; };
+		B18A9B8118665484006BF9BB /* UIColor+UIColor_RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_RGB.h"; sourceTree = "<group>"; };
+		B18A9B8218665484006BF9BB /* UIColor+UIColor_RGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_RGB.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +141,20 @@
 			children = (
 				B18A9B4518662ECE006BF9BB /* AFAppDelegate.h */,
 				B18A9B4618662ECF006BF9BB /* AFAppDelegate.m */,
+				B18A9B7018663136006BF9BB /* AFDayTableViewController.h */,
+				B18A9B7118663136006BF9BB /* AFDayTableViewController.m */,
+				B18A9B7C18663D5F006BF9BB /* DayTableHeaderView.xib */,
+				B18A9B7918663747006BF9BB /* AFWordsViewController.h */,
+				B18A9B7A18663747006BF9BB /* AFWordsViewController.m */,
+				B18A9B7318663265006BF9BB /* AFDayCell.h */,
+				B18A9B7418663265006BF9BB /* AFDayCell.m */,
+				B18A9B6918662EF2006BF9BB /* MainStoryboard_iPhone.storyboard */,
+				B18A9B6B18662F03006BF9BB /* MainStoryboard_iPad.storyboard */,
 				B18A9B4B18662ECF006BF9BB /* Images.xcassets */,
 				B18A9B4818662ECF006BF9BB /* DailyWords.xcdatamodeld */,
+				B18A9B7E186641EF006BF9BB /* AFDayEntry.h */,
+				B18A9B7F186641EF006BF9BB /* AFDayEntry.m */,
+				B18A9B8418665497006BF9BB /* Categories and Helpers */,
 				B18A9B3D18662ECE006BF9BB /* Supporting Files */,
 			);
 			path = DailyWords;
@@ -151,6 +187,17 @@
 				B18A9B5C18662ECF006BF9BB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B18A9B8418665497006BF9BB /* Categories and Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B18A9B761866333E006BF9BB /* NSDate+Misc.h */,
+				B18A9B771866333E006BF9BB /* NSDate+Misc.m */,
+				B18A9B8118665484006BF9BB /* UIColor+UIColor_RGB.h */,
+				B18A9B8218665484006BF9BB /* UIColor+UIColor_RGB.m */,
+			);
+			name = "Categories and Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +248,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Adam D. Fanslau";
 				TargetAttributes = {
+					B18A9B3018662ECE006BF9BB = {
+						DevelopmentTeam = 93X8P4UHZH;
+					};
 					B18A9B5018662ECF006BF9BB = {
 						TestTargetID = B18A9B3018662ECE006BF9BB;
 					};
@@ -229,7 +279,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18A9B6C18662F03006BF9BB /* MainStoryboard_iPad.storyboard in Resources */,
+				B18A9B6A18662EF2006BF9BB /* MainStoryboard_iPhone.storyboard in Resources */,
 				B18A9B4118662ECE006BF9BB /* InfoPlist.strings in Resources */,
+				B18A9B7D18663D5F006BF9BB /* DayTableHeaderView.xib in Resources */,
 				B18A9B4C18662ECF006BF9BB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B18A9B4A18662ECF006BF9BB /* DailyWords.xcdatamodeld in Sources */,
+				B18A9B7518663265006BF9BB /* AFDayCell.m in Sources */,
+				B18A9B8318665484006BF9BB /* UIColor+UIColor_RGB.m in Sources */,
+				B18A9B781866333E006BF9BB /* NSDate+Misc.m in Sources */,
+				B18A9B7218663136006BF9BB /* AFDayTableViewController.m in Sources */,
 				B18A9B4318662ECE006BF9BB /* main.m in Sources */,
+				B18A9B7B18663747006BF9BB /* AFWordsViewController.m in Sources */,
+				B18A9B80186641EF006BF9BB /* AFDayEntry.m in Sources */,
 				B18A9B4718662ECF006BF9BB /* AFAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +369,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Adam Fanslau (93X8P4UHZH)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -350,7 +409,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Adam Fanslau (93X8P4UHZH)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -372,10 +431,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DailyWords/DailyWords-Prefix.pch";
 				INFOPLIST_FILE = "DailyWords/DailyWords-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -385,10 +447,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DailyWords/DailyWords-Prefix.pch";
 				INFOPLIST_FILE = "DailyWords/DailyWords-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -454,6 +519,7 @@
 				B18A9B6518662ECF006BF9BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B18A9B6618662ECF006BF9BB /* Build configuration list for PBXNativeTarget "DailyWordsTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +528,7 @@
 				B18A9B6818662ECF006BF9BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
