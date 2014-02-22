@@ -7,7 +7,8 @@
 //
 
 #import "AFAppDelegate.h"
-
+#import "AFDayEntry.h"
+#import "NSDate+Misc.h"
 @implementation AFAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -20,7 +21,7 @@
 }
 
 - (void)applicationSignificantTimeChange:(UIApplication *)application
-{
+{    
     [[NSNotificationCenter defaultCenter] postNotificationName:timeChangeNotification object:nil];
 }
 

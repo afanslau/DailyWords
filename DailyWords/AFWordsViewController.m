@@ -13,9 +13,11 @@
 @property (strong, nonatomic) IBOutlet UILabel *wordCountLabel;
 @property (strong, nonatomic) IBOutlet UILabel *dateLabel;
 @property (strong, nonatomic) NSManagedObjectContext* context;
+@property (strong, nonatomic) UIBarButtonItem* actionButton;
 @end
 
 @implementation AFWordsViewController
+@synthesize actionButton = _actionButton;
 @synthesize context = _context;
 @synthesize textView = _textView;
 @synthesize dayEntry;
@@ -33,11 +35,15 @@
 {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
-    [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionButtonPressed:)]];
+    self.actionButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionButtonPressed:)];
+    [self.navigationItem setRightBarButtonItem:self.actionButton];
 
     [self.textView setText:self.dayEntry.text];
     [self.navigationItem setTitle:[self.dayEntry.date formattedStringUsingFormat:@"MMMM d"]];
     [self.wordCountLabel setText:[NSString stringWithFormat:@"%ld words", (long)self.dayEntry.wordCount.integerValue]];
+    
+    [self.actionButton setEnabled:(self.textView.text.length > 0)];
+
     
     [self registerForKeyboardNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preferredContentSizeChanged:) name:UIContentSizeCategoryDidChangeNotification object:nil];
@@ -157,7 +163,8 @@
 
 - (void)textViewDidEndEditing:(UITextView *)textView
 {
-     [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionButtonPressed:)]];
+    [self.actionButton setEnabled:(textView.text.length>0)];
+    [self.navigationItem setRightBarButtonItem:self.actionButton];
     
     NSError* error;
     [self.context save:&error];
@@ -168,9 +175,11 @@
 
 - (IBAction)actionButtonPressed:(id)sender
 {
-    UIActivityViewController *activityvc = [[UIActivityViewController alloc] initWithActivityItems:@[self.dayEntry.text] applicationActivities:nil];
-    [activityvc setExcludedActivityTypes:@[UIActivityTypePostToWeibo, UIActivityTypePostToVimeo, UIActivityTypeAddToReadingList, UIActivityTypeAssignToContact, UIActivityTypePostToFlickr, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToTwitter]];
-    [self presentViewController:activityvc animated:YES completion:nil];
+    if (self.textView.text.length > 0) {        
+        UIActivityViewController *activityvc = [[UIActivityViewController alloc] initWithActivityItems:@[self.dayEntry.text] applicationActivities:nil];
+        [activityvc setExcludedActivityTypes:@[UIActivityTypePostToWeibo, UIActivityTypePostToVimeo, UIActivityTypeAddToReadingList, UIActivityTypeAssignToContact, UIActivityTypePostToFlickr, UIActivityTypeSaveToCameraRoll, UIActivityTypePostToTwitter]];
+        [self presentViewController:activityvc animated:YES completion:nil];
+    }
 }
 
 - (IBAction)donePressed:(id)sender
